@@ -3,6 +3,7 @@ import 'package:salon_slots/constants/color_constants.dart';
 import 'package:salon_slots/constants/image_path.dart';
 import 'package:salon_slots/constants/string_constants.dart';
 import 'package:salon_slots/pages/info_screen.dart';
+import 'package:salon_slots/utils/size_utils.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class SplashScreenPage extends StatefulWidget {
@@ -15,6 +16,7 @@ class SplashScreenPage extends StatefulWidget {
 class _SplashScreenPageState extends State<SplashScreenPage> {
   @override
   Widget build(BuildContext context) {
+    size(context);
     return SplashScreen(
       seconds: 5,
       navigateAfterSeconds: InfoScreen(),
@@ -22,7 +24,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
         splashImage,
       ),
       backgroundColor: white,
-      photoSize: 150.0,
+      photoSize: height* 0.3,
       useLoader: false,
       title: Text(welcome, style: TextStyle(fontSize: 25, color: themeColor)),
     );

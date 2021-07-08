@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salon_slots/constants/image_path.dart';
 import 'package:salon_slots/constants/string_constants.dart';
-import 'package:salon_slots/pages/info_screen.dart';
 import 'package:salon_slots/utils/size_utils.dart';
 import 'package:salon_slots/widgets/common_info_screens.dart';
 
@@ -21,13 +20,11 @@ class _InfoScreenOneState extends State<InfoScreenOne> {
             image:discountImage,
             firstText: firstInfoScreenTextOne,
             secondText: firstInfoScreenTextTwo,
-            firstButtonText: next,
-            secondButtonText: skip,
-            function: (){
-              pageIndexNotifier.value = 1;
-              //return list[1];
-             // Navigator.push(context, MaterialPageRoute(builder: (context)=>InfoScreenTwo()));
-             }
+            // function: (){
+            //   pageIndexNotifier.value = 1;
+            //   //return list[1];
+            //  // Navigator.push(context, MaterialPageRoute(builder: (context)=>InfoScreenTwo()));
+            //  }
         )
     );
   }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salon_slots/constants/image_path.dart';
 import 'package:salon_slots/constants/string_constants.dart';
-import 'package:salon_slots/pages/info_screen.dart';
 import 'package:salon_slots/widgets/common_info_screens.dart';
 
 class InfoScreenTwo extends StatefulWidget {
@@ -19,11 +18,9 @@ class _InfoScreenTwoState extends State<InfoScreenTwo> {
             image: salonImage,
             firstText: secondInfoScreenTextOne,
             secondText: secondInfoScreenTextTwo,
-            firstButtonText: next,
-            secondButtonText: skip,
-            function: (){
-              pageIndexNotifier.value = 2;
-            }
+            // function: (){
+            //   pageIndexNotifier.value = 2;
+            // }
         )
     );
   }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salon_slots/constants/image_path.dart';
 import 'package:salon_slots/constants/string_constants.dart';
-import 'package:salon_slots/pages/login_page.dart';
 import 'package:salon_slots/widgets/common_info_screens.dart';
 
 class InfoScreenThree extends StatefulWidget {
@@ -15,17 +14,13 @@ class _InfoScreenThreeState extends State<InfoScreenThree> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body:
-        commonInfoScreens(
-            image: mobileImage,
-            firstText: thirdInfoScreenTextOne,
-            secondText: thirdInfoScreenTextTwo,
-            firstButtonText: next,
-            secondButtonText: skip,
-            function: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
-            }
-        )
-      );
+        body: commonInfoScreens(
+      image: mobileImage,
+      firstText: thirdInfoScreenTextOne,
+      secondText: thirdInfoScreenTextTwo,
+      // function: (){
+      //   Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
+      // }
+    ));
   }
 }
